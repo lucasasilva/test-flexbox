@@ -1,0 +1,76 @@
+html{
+    box-sizing: border-box;
+}
+
+.container{
+    border: solid 5px black;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+}
+
+.container2{
+    margin: 20px;
+    border: solid 2px black;
+    height: 250px;
+    width: 400px;
+    background-color: aquamarine;
+
+}
+
+.container3{
+    border: solid 2px black;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 250px;
+    background-color: beige;
+    display: flex;
+    flex-grow: 1;
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.para{
+    border: solid 1px black;
+    height: 125px;
+    background-color: aliceblue; 
+    margin: 0;
+    flex-grow: 1;
+
+}
+.box{
+    border: solid 1px black;
+    height: 125px;
+    background-color:blueviolet; 
+    flex-grow: 1;
+ 
+}
+
+.box2{
+    border: solid 1px black;
+    height: 125px;
+    background-color:white;
+    flex-grow: 1;
+
+}
+
+.box3{
+    border: solid 1px black;
+    height: 125px;
+    background-color:cornflowerblue;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.break{
+    flex-basis: 100%;
+}/*Necessario que exista o atributo flex-wrap:wrap(linha 30), 
+quando existente, e possivel apontar o atributo flex-basis para 100%
+na div invisivel. Quando colocada entre duas divs invisiveis (linhas 17,18
+e 19 de test.html,o navegador entende que aquele elemente deve ocupar toda 
+a linha/coluna do display, por nao enxergar nada que possa estar lado a lado
+com ele */
